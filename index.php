@@ -1,7 +1,3 @@
-
-
-
-
 <?php include 'includes/auth.php'; ?>
 <?php include 'includes/common-header.php'; ?>
 <?php include 'config.php'; ?>
