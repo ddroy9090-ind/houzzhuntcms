@@ -33,7 +33,7 @@
                 <img class="rounded header-profile-user" src="assets/images/users/avatar-1.jpg"
                     alt="Header Avatar">
                 <span class="text-start">
-                    <span class="d-block fw-medium sidebar-user-name-text">Anna Adame</span>
+                    <span class="d-block fw-medium sidebar-user-name-text"><?php echo htmlspecialchars($_SESSION['name']); ?></span>
                     <span class="d-block fs-14 sidebar-user-name-sub-text"><i
                             class="ri ri-circle-fill fs-10 text-success align-baseline"></i> <span
                             class="align-middle">Online</span></span>
@@ -42,8 +42,8 @@
         </button>
         <div class="dropdown-menu dropdown-menu-end">
             <!-- item-->
-            <h6 class="dropdown-header">Welcome Anna!</h6>
-            <a class="dropdown-item" href="pages-profile.html"><i
+            <h6 class="dropdown-header">Welcome <?php echo htmlspecialchars($_SESSION['name']); ?>!</h6>
+            <a class="dropdown-item" href="profile.php"><i
                     class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span
                     class="align-middle">Profile</span></a>
             <a class="dropdown-item" href="apps-chat.html"><i
@@ -56,7 +56,7 @@
                     class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span
                     class="align-middle">Help</span></a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="pages-profile.html"><i
+            <a class="dropdown-item" href="profile.php"><i
                     class="mdi mdi-wallet text-muted fs-16 align-middle me-1"></i> <span
                     class="align-middle">Balance : <b>$5971.67</b></span></a>
             <a class="dropdown-item" href="pages-profile-settings.html"><span
@@ -2063,7 +2063,7 @@
                     <div class="collapse menu-dropdown" id="sidebarProfile">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="pages-profile.html" class="nav-link" data-key="t-simple-page">
+                                <a href="profile.php" class="nav-link" data-key="t-simple-page">
                                     Simple Page </a>
                             </li>
                             <li class="nav-item">
