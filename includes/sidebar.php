@@ -175,6 +175,12 @@
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="leads.php">
+                        <i class="ri-user-follow-line"></i> <span data-key="t-leads">Leads</span>
+                    </a>
+                </li>
+
 
                 <!-- <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse"
