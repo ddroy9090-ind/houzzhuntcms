@@ -7,6 +7,8 @@ while ($lead = $leads->fetch_assoc()):
     <td><?php echo htmlspecialchars($lead['name']); ?></td>
     <td><?php echo htmlspecialchars($lead['email']); ?></td>
     <td><?php echo htmlspecialchars($lead['phone']); ?></td>
+    <td><?php echo htmlspecialchars($lead['partner']); ?></td>
+    <td><?php echo htmlspecialchars($lead['project']); ?></td>
     <td>
         <select class="form-select form-select-sm status-select" data-id="<?php echo $lead['id']; ?>">
             <?php
