@@ -3,10 +3,10 @@
 // $user = "root";
 // $pass = "India@123";
 // $db   = "channel_portal";
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db   = "channel_portal";
+$host = "root";
+$user = "u431421769_cpportal";
+$pass = "Houzzhunt@2025";
+$db   = "u431421769_cpportal";
 
 $conn = new mysqli($host, $user, $pass, $db);
 
