@@ -3,6 +3,8 @@ CREATE TABLE `leads` (
   `name` varchar(100) NOT NULL,
   `email` varchar(100) DEFAULT NULL,
   `phone` varchar(20) DEFAULT NULL,
+  `partner` varchar(100) DEFAULT NULL,
+  `project` varchar(100) DEFAULT NULL,
   `status` enum('Enquiry','Site Visit','Booking','Closed') NOT NULL DEFAULT 'Enquiry',
   `next_followup` date DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),

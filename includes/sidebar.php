@@ -181,6 +181,12 @@
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="reports.php">
+                        <i class="ri-bar-chart-line"></i> <span data-key="t-reports">Reports</span>
+                    </a>
+                </li>
+
 
                 <!-- <li class="nav-item">
                     <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse"

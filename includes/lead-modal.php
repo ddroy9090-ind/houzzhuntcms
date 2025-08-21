@@ -21,6 +21,14 @@
             <input type="text" class="form-control" name="phone">
           </div>
           <div class="mb-3">
+            <label class="form-label">Partner</label>
+            <input type="text" class="form-control" name="partner">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Project</label>
+            <input type="text" class="form-control" name="project">
+          </div>
+          <div class="mb-3">
             <label class="form-label">Next Follow-up</label>
             <input type="date" class="form-control" name="next_followup">
           </div>

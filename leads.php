@@ -28,6 +28,8 @@
                                             <th>Name</th>
                                             <th>Email</th>
                                             <th>Phone</th>
+                                            <th>Partner</th>
+                                            <th>Project</th>
                                             <th>Status</th>
                                             <th>Next Follow-up</th>
                                         </tr>
