@@ -3,7 +3,17 @@
 
 
 <?php include 'includes/auth.php'; ?>
-<?php include 'includes/common-header.php' ?>
+<?php include 'includes/common-header.php'; ?>
+<?php include 'config.php'; ?>
+<?php
+$reminders = [];
+$reminderQuery = $conn->query("SELECT name, next_followup FROM leads WHERE next_followup <= CURDATE() AND status <> 'Closed'");
+if ($reminderQuery) {
+    while ($row = $reminderQuery->fetch_assoc()) {
+        $reminders[] = $row;
+    }
+}
+?>
 
 
 <div class="main-content">
@@ -23,12 +33,25 @@
                                         <p class="text-muted mb-0">Here's what's happening with your store
                                             today.</p>
                                     </div>
+                                    <div class="mt-3 mt-lg-0">
+                                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#leadModal">Add Lead</button>
+                                    </div>
                                 </div>
                                 <!-- end card header -->
                             </div>
                             <!--end col-->
                         </div>
                         <!--end row-->
+                        <?php if (!empty($reminders)): ?>
+                        <div class="alert alert-warning">
+                            <strong>Follow-up reminders:</strong>
+                            <ul class="mb-0">
+                                <?php foreach ($reminders as $r): ?>
+                                <li><?php echo htmlspecialchars($r['name']); ?> - <?php echo $r['next_followup']; ?></li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                        <?php endif; ?>
 
                         <div class="row">
                             <div class="col-xl-3 col-md-6">
@@ -1513,4 +1536,5 @@
     <?php include 'includes/footer.php'?>
 </div>
 
-<?php include 'includes/common-footer.php' ?>
+<?php include 'includes/lead-modal.php'; ?>
+<?php include 'includes/common-footer.php'; ?>
