@@ -3,7 +3,7 @@
 // $user = "root";
 // $pass = "India@123";
 // $db   = "channel_portal";
-$host = "root";
+$host = "localhost";
 $user = "u431421769_cpportal";
 $pass = "Houzzhunt@2025";
 $db   = "u431421769_cpportal";
