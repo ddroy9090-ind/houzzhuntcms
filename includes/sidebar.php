@@ -182,6 +182,12 @@
                 </li>
 
                 <li class="nav-item">
+                    <a class="nav-link menu-link" href="chat.php">
+                        <i class="ri-message-2-line"></i> <span data-key="t-chat">Chat</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link menu-link" href="reports.php">
                         <i class="ri-bar-chart-line"></i> <span data-key="t-reports">Reports</span>
                     </a>
